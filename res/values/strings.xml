@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">ToDo</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Tasks To Do</string>
+    <string name="title_activity_create_task">Add New Task</string>
+    <string name="create_button">Create</string>
+    <string name="done_button">Done</string>
+    <string name="pick_time_button">Pick Time</string>
+    <string name="pick_date_button">Pick Date</string>
+    <string name="add_task">Add Task</string>
+	<string name="task_description">Description</string>
+	<string name="timeView">HH : MM</string>
+	<string name="dateView">DD / MM / YYYY</string>
+	<string name="random_create_button">Random</string>
+	
+</resources>

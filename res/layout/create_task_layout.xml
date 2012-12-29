@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:onClick="addNewTask"
+        android:text="@string/create_button" />
+
+    <Button
+        android:id="@+id/pick_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="36dp"
+        android:onClick="showDatePickerDialog"
+        android:text="@string/pick_date_button" />
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pick_date_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="41dp"
+        android:text="@string/dateView" />
+
+    <Button
+        android:id="@+id/pick_time_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:onClick="showTimePickerDialog"
+        android:text="@string/pick_time_button" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pick_time_button"
+        android:layout_alignLeft="@+id/dateView"
+        android:text="@string/timeView" />
+
+    <EditText
+        android:id="@+id/task_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pick_time_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="@string/task_description" />
+
+    <Button
+        android:id="@+id/random_create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:onClick="fetchNewRandomTask"
+        android:text="@string/random_create_button" />
+
+</RelativeLayout>
